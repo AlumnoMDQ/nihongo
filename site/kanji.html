@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanji</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu-open">
+                <li><a href="katakana.html">Katakana</a></li>
+                <li><a href="hiragana.html">Hiragana</a></li>
+                <li><a href="romaji.html">Romaji</a></li>
+                <li><a href="kanji.html">Kanji</a></li>
+            </ul>
+            <a href="#" class="menu-toggle">Menú</a>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h1>Tabla de Kanji</h1>
+            <p>Los Kanji son caracteres chinos utilizados en la escritura japonesa. Cada kanji representa una palabra o concepto y puede tener múltiples pronunciaciones y significados dependiendo del contexto.</p>
+            <p>Cada kanji tiene una cantidad específica de trazos y puede tener varias lecturas, conocidas como Onyomi (lectura derivada del chino) y Kunyomi (lectura japonesa nativa). Además, a menudo se acompañan de furiganas (kana que indican la lectura correcta) para ayudar en la lectura, especialmente en textos dirigidos a niños o principiantes.</p>
+            <table id="kanji-table">
+                <thead>
+                    <tr>
+                        <th>Kanji</th>
+                        <th>Lectura (Onyomi/Kunyomi)</th>
+                        <th>Significado</th>
+                        <th>Trazos</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>人</td>
+                        <td>じん (jin) / ひと (hito)</td>
+                        <td>Persona</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>日</td>
+                        <td>にち (nichi) / ひ (hi)</td>
+                        <td>Día, Sol</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>学</td>
+                        <td>がく (gaku)</td>
+                        <td>Estudio, Aprendizaje</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>先</td>
+                        <td>せん (sen) / さき (saki)</td>
+                        <td>Anterior, Futuro</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>時</td>
+                        <td>じ (ji) / とき (toki)</td>
+                        <td>Tiempo, Hora</td>
+                        <td>10</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2>Ejemplos de Kanji por número de trazos:</h2>
+            <h3>2 Trazos:</h3>
+            <ul>
+                <li>人 (ひと) - Persona</li>
+            </ul>
+            <h3>4 Trazos:</h3>
+            <ul>
+                <li>日 (にち) - Día, Sol</li>
+            </ul>
+            <h3>8 Trazos:</h3>
+            <ul>
+                <li>学 (がく) - Estudio, Aprendizaje</li>
+            </ul>
+            <h3>6 Trazos:</h3>
+            <ul>
+                <li>先 (せん) - Anterior, Futuro</li>
+            </ul>
+            <h3>10 Trazos:</h3>
+            <ul>
+                <li>時 (じ) - Tiempo, Hora</li>
+            </ul>
+        </div>
+    </main>
+
+    <script src="../scripts/script.js" defer></script>
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('header nav ul').classList.toggle('menu-open');
+        });
+    </script>
+</body>
+</html>

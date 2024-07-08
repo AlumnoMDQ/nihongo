@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katakana</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu-open">
+                <li><a href="katakana.html">Katakana</a></li>
+                <li><a href="hiragana.html">Hiragana</a></li>
+                <li><a href="romaji.html">Romaji</a></li>
+                <li><a href="kanji.html">Kanji</a></li>
+            </ul>
+            <a href="#" class="menu-toggle">Menú</a>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h1>Tabla de Katakana</h1>
+            <p>El Katakana es otro sistema de escritura japonesa. Se utiliza principalmente para palabras extranjeras, nombres extranjeros, términos técnicos y énfasis en textos. Cada carácter representa una sílaba y su pronunciación básica.</p>
+            <p>Orden de las vocales en japonés: ア (a) - イ (i) - ウ (u) - エ (e) - オ (o)</p>
+            <table id="katakana-table">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>a</th>
+                        <th>i</th>
+                        <th>u</th>
+                        <th>e</th>
+                        <th>o</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>ア行</th>
+                        <td>ア (a)</td>
+                        <td>イ (i)</td>
+                        <td>ウ (u)</td>
+                        <td>エ (e)</td>
+                        <td>オ (o)</td>
+                    </tr>
+                    <tr>
+                        <th>カ行</th>
+                        <td>カ (ka)</td>
+                        <td>キ (ki)</td>
+                        <td>ク (ku)</td>
+                        <td>ケ (ke)</td>
+                        <td>コ (ko)</td>
+                    </tr>
+                    <tr>
+                        <th>サ行</th>
+                        <td>サ (sa)</td>
+                        <td>シ (shi)</td>
+                        <td>ス (su)</td>
+                        <td>セ (se)</td>
+                        <td>ソ (so)</td>
+                    </tr>
+                    <tr>
+                        <th>タ行</th>
+                        <td>タ (ta)</td>
+                        <td>チ (chi)</td>
+                        <td>ツ (tsu)</td>
+                        <td>テ (te)</td>
+                        <td>ト (to)</td>
+                    </tr>
+                    <tr>
+                        <th>ナ行</th>
+                        <td>ナ (na)</td>
+                        <td>ニ (ni)</td>
+                        <td>ヌ (nu)</td>
+                        <td>ネ (ne)</td>
+                        <td>ノ (no)</td>
+                    </tr>
+                    <tr>
+                        <th>ハ行</th>
+                        <td>ハ (ha)</td>
+                        <td>ヒ (hi)</td>
+                        <td>フ (fu)</td>
+                        <td>ヘ (he)</td>
+                        <td>ホ (ho)</td>
+                    </tr>
+                    <tr>
+                        <th>マ行</th>
+                        <td>マ (ma)</td>
+                        <td>ミ (mi)</td>
+                        <td>ム (mu)</td>
+                        <td>メ (me)</td>
+                        <td>モ (mo)</td>
+                    </tr>
+                    <tr>
+                        <th>ヤ行</th>
+                        <td>ヤ (ya)</td>
+                        <td></td>
+                        <td>ユ (yu)</td>
+                        <td></td>
+                        <td>ヨ (yo)</td>
+                    </tr>
+                    <tr>
+                        <th>ラ行</th>
+                        <td>ラ (ra)</td>
+                        <td>リ (ri)</td>
+                        <td>ル (ru)</td>
+                        <td>レ (re)</td>
+                        <td>ロ (ro)</td>
+                    </tr>
+                    <tr>
+                        <th>ワ行</th>
+                        <td>ワ (wa)</td>
+                        <td></td>
+                        <td></td>
+                        <td>ヲ (wo)</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>ン行</th>
+                        <td>ン (n)</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <script src="../scripts/script.js" defer></script>
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('header nav ul').classList.toggle('menu-open');
+        });
+    </script>
+</body>
+</html>

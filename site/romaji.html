@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romaji</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu-open">
+                <li><a href="katakana.html">Katakana</a></li>
+                <li><a href="hiragana.html">Hiragana</a></li>
+                <li><a href="romaji.html">Romaji</a></li>
+                <li><a href="kanji.html">Kanji</a></li>
+            </ul>
+            <a href="#" class="menu-toggle">Menú</a>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h1>Tabla de Romaji</h1>
+            <p>El Romaji es la romanización del japonés, es decir, la representación del japonés usando el alfabeto latino (A, B, C, etc.). Esto facilita la lectura y escritura del japonés para personas que no están familiarizadas con los sistemas de escritura japoneses tradicionales, como el Hiragana, Katakana y Kanji.</p>
+            <p>Orden de las vocales en japonés: A - I - U - E - O</p>
+            <table id="romaji-table">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>a</th>
+                        <th>i</th>
+                        <th>u</th>
+                        <th>e</th>
+                        <th>o</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>a</th>
+                        <td>a</td>
+                        <td>i</td>
+                        <td>u</td>
+                        <td>e</td>
+                        <td>o</td>
+                    </tr>
+                    <tr>
+                        <th>ka</th>
+                        <td>ka</td>
+                        <td>ki</td>
+                        <td>ku</td>
+                        <td>ke</td>
+                        <td>ko</td>
+                    </tr>
+                    <tr>
+                        <th>sa</th>
+                        <td>sa</td>
+                        <td>shi</td>
+                        <td>su</td>
+                        <td>se</td>
+                        <td>so</td>
+                    </tr>
+                    <tr>
+                        <th>ta</th>
+                        <td>ta</td>
+                        <td>chi</td>
+                        <td>tsu</td>
+                        <td>te</td>
+                        <td>to</td>
+                    </tr>
+                    <tr>
+                        <th>na</th>
+                        <td>na</td>
+                        <td>ni</td>
+                        <td>nu</td>
+                        <td>ne</td>
+                        <td>no</td>
+                    </tr>
+                    <tr>
+                        <th>ha</th>
+                        <td>ha</td>
+                        <td>hi</td>
+                        <td>fu</td>
+                        <td>he</td>
+                        <td>ho</td>
+                    </tr>
+                    <tr>
+                        <th>ma</th>
+                        <td>ma</td>
+                        <td>mi</td>
+                        <td>mu</td>
+                        <td>me</td>
+                        <td>mo</td>
+                    </tr>
+                    <tr>
+                        <th>ya</th>
+                        <td>ya</td>
+                        <td></td>
+                        <td>yu</td>
+                        <td></td>
+                        <td>yo</td>
+                    </tr>
+                    <tr>
+                        <th>ra</th>
+                        <td>ra</td>
+                        <td>ri</td>
+                        <td>ru</td>
+                        <td>re</td>
+                        <td>ro</td>
+                    </tr>
+                    <tr>
+                        <th>wa</th>
+                        <td>wa</td>
+                        <td></td>
+                        <td></td>
+                        <td>wo</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>n</th>
+                        <td>n</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <script src="../scripts/script.js" defer></script>
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('header nav ul').classList.toggle('menu-open');
+        });
+    </script>
+</body>
+</html>
